@@ -1,6 +1,10 @@
 name: "CodeSentinel PR Reviewer"
-description: "LLM-powered PR reviewer for style and security checks. Supports Gemini, OpenAI, Groq, Anthropic, and HuggingFace."
+description: "LLM-powered PR reviewer for naming, style, and security checks. Supports Gemini, OpenAI, Groq, Anthropic, and HuggingFace."
 author: "Akpguj"
+
+branding:
+  icon: "shield"
+  color: "green"
 
 inputs:
   google_api_key:
