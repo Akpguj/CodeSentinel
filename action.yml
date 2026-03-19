@@ -1,0 +1,24 @@
+name: "CodeSentinel PR Reviewer"
+description: "LLM-powered PR reviewer for style and security checks. Supports Gemini, OpenAI, Groq, Anthropic, and HuggingFace."
+author: "Akpguj"
+
+inputs:
+  google_api_key:
+    description: "Google API key (for Gemini LLM and/or Gemini embeddings)"
+    required: false
+  openai_api_key:
+    description: "OpenAI API key (also works with OpenRouter when OPENAI_BASE_URL is set)"
+    required: false
+  groq_api_key:
+    description: "Groq API key (Llama 3, Mixtral, Gemma via API)"
+    required: false
+  anthropic_api_key:
+    description: "Anthropic API key (Claude models)"
+    required: false
+  hf_token:
+    description: "Hugging Face token (HF Inference API)"
+    required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
