@@ -43,7 +43,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run CodeCheck
-        uses: Akpguj/CodeCheck@v2.0.0
+        uses: Akpguj/CodeCheck@v2.1.0
         with:
           google_api_key: ${{ secrets.GOOGLE_API_KEY }}
           # openai_api_key: ${{ secrets.OPENAI_API_KEY }}
@@ -201,7 +201,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run CodeCheck
-        uses: Akpguj/CodeCheck@v2.0.0
+        uses: Akpguj/CodeCheck@v2.1.0
         with:
           # Uncomment only the key(s) your chosen provider needs.
           # If both your LLM and embedding use the same provider,
